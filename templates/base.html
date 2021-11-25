@@ -37,7 +37,7 @@
 
 
           <div class="header__user">
-            <a href="profile.html">
+            <a href="{% url 'profile-page' request.user.id %}">
               <div class="avatar avatar--medium active">
                 
                 <img src="{{ request.user.user_detail_set.all.first.avatar.url }}" alt="">
